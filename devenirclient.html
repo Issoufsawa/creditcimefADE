@@ -180,6 +180,22 @@
       }
     }
 
+
+
+
+    /* Personnalisation du bouton radio */
+.custom-radio {
+    accent-color: #f3f4f5; /* Couleur au cocher (supporté par les navigateurs modernes) */
+}
+
+/* Option pour personnalisation avancée (anciens navigateurs) */
+.custom-radio:checked {
+    background-color: #FF9339;
+    border-color: #FF9339;
+}
+
+
+
 </style>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
@@ -269,7 +285,7 @@
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="/quisommesnous.html" class="nav-link">
                                 Qui sommes-nous ?
                                 <!-- <i class='bx bx-caret-down'></i> -->
                             </a>
@@ -293,13 +309,13 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="/particuliers/credit" class="nav-link">
+                                            <a href="/credit.html" class="nav-link">
                                                 Crédits
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="/particuliers/comptable" class="nav-link">
-                                                Expertise comptacble
+                                                Expertise comptable
                                             </a>
                                         </li>
                                     </ul>
@@ -311,12 +327,12 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="/credit.html" class="nav-link">
+                                            <a href="/comptepme.html" class="nav-link">
                                                 Comptes
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="/credit.html" class="nav-link">
+                                            <a href="/creditparticulier.html" class="nav-link">
                                                 Crédits
                                             </a>
                                         </li>
@@ -331,7 +347,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="/reseau.html" class="nav-link">
                                 Notre réseau
                             </a>
                         </li>
@@ -359,7 +375,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="/contact" class="nav-link">
+                            <a href="/contact.html" class="nav-link">
                                 Contact
                             </a>
                         </li>
@@ -368,7 +384,7 @@
                     <div class="nav-side d-display">
                         <div class="nav-side-item">
                             <div class="get-btn">
-                                <a href="#" class="default-btn btn-bg-two border-radius-50">Devenir Client <i class='bx bx-chevron-right'></i></a>
+                                <a href="/devenirclient.html" class="default-btn btn-bg-two border-radius-50">Devenir Client <i class='bx bx-chevron-right'></i></a>
                             </div>	
                         </div>
                     </div>
@@ -499,24 +515,26 @@
     <div class="container">
         <div class="row">
             
-          
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="choose-img">
+                    <img src="../../../assets/images/client.jpg" alt="Images">
+                </div>
+            </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="choose-content mr-20">
                     <form>
                         <div class="row g-3">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">1</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                <label class="form-check-label" for="inlineRadio2">2</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-                                <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
-                              </div>
-
+                            <div class="col-12">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input custom-radio" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">PARTICULIER</label>
+                                </div>
+                                <div class="form-check form-check-inline ms-5">
+                                    <input class="form-check-input custom-radio" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">PME</label>
+                                </div>
+                            </div>
+                            
                             <div class="col-6">
                                 <div class="form-floating">
                                     
@@ -540,16 +558,6 @@
                                 <div class="form-floating">
                                     <input type="email" class="form-control" id="email" placeholder="Your Email">
                                     <label for="email">Adresse mail</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <select class="form-select" id="subject" aria-label="Objet">
-                                        <option value="" selected disabled>-Selectionner-</option>
-                                        <option value="demande-info">Particulier</option>
-                                        <option value="support-technique">PME</option>
-                                    </select>
-                                    <label for="phone">Profil</label>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -580,18 +588,14 @@
                             </div>
                             <div class="col-12 text-center">
                                  <div class="get-btn">
-                                <a href="#" class="default-btn btn-bg-two border-radius-50">Envoyer <i class='bx bx-chevron-right'></i></a>
+                                <a href="#" class="default-btn btn-bg-two border-radius-5">Envoyer <i class='bx bx-chevron-right'></i></a>
                             </div>	
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="choose-img">
-                    <img src="../../../assets/images/mission.jpg" alt="Images">
-                </div>
-            </div>
+           
         </div>
     </div>
 </div>
