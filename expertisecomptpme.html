@@ -28,6 +28,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="icon" type="image/png" href="assets/images/logo2.png">
   <style>
+
+.case-study-item img {
+    width: 100%; /* S'adapte à la largeur de la card */
+    height: 100%; /* Prend toute la hauteur disponible */
+    object-fit: cover; /* Remplit la card en respectant les proportions */
+    border-radius: 5px; /* Optionnel : arrondir les bords */
+}
+
+.case-study-item {
+    height: 250px; /* Hauteur de la card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden; /* S'assure qu'il n'y a pas de débordement */
+}
+
     .text{
         font-size: 20px;
     }
@@ -398,7 +415,7 @@
                                 <i class='bx bx-search'></i>
                             </div>
                             <div class="get-btn">
-                                <a href="#" class="default-btn btn-bg-two border-radius-50">Devenir Client <i class='bx bx-chevron-right'></i></a>
+                                <a href="/devenirclient.html" class="default-btn btn-bg-two border-radius-50">Devenir Client <i class='bx bx-chevron-right'></i></a>
                             </div>	
                         </div>
                     </div>
@@ -457,10 +474,12 @@
     <div class="case-study-area" style="padding-top: 40px; padding-bottom: 70px;">
         <div class="container">
             <div class="text-center">
-                <p class="text" style="font-size: 20px;"> Le compte épargne Libre est un compte qui fait fructifier votre argent. </div>
+                <p class="text" style="font-size: 20px;">L'expertise comptable est une discipline qui consiste à fournir des services professionnels liés à la gestion financière, 
+                    comptable et fiscale des entreprises, des associations, ou des particuliers. Elle joue un rôle clé dans le fonctionnement et la pérennité des organisations,
+                     tout en garantissant la conformité aux normes légales et réglementaires. </div>
 
             <div class="row mt-5">
-                <div class="col-lg-8 col-md-8 col-sm-12 pt-3">
+                <div class="col-lg-6 col-md-8 col-sm-12 pt-3">
         
                     <div class="border p-4 shadow rounded" style=" margin-bottom: 70px;">
                         <div class="row">
@@ -536,9 +555,11 @@
                     </div>
                    
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 pt-5">
-                    <img src="/assets/images/services/compteparlibre.jpg" style="height: 250px;" alt="Blog Images">
+                <div class="col-lg- col-md-4 col-sm-12 pt-5">
+                    <div class="case-study-item">
+                    <img src="/assets/images/services/comptable.jpg" style="height: 250px;" alt="Blog Images">
                 </div>
+            </div>
             </div>
         </div>
         </div>
@@ -562,7 +583,7 @@
                         <div class="content text-center">
                             <h3 style="font-size: 18px; text-transform: uppercase;"><a style="color: #17334b;" href="/particuliers/credit">Compte<br></a></h3>
                             <ul>
-                                <li style="color: #17334b;">Particuliers</li>
+                                <li style="color: #17334b;">PME</li>
                             </ul>
                             <a href="/particuliers/credit" class="more-btn "><i class='bx bx-right-arrow-alt'></i></a>
                         </div>
@@ -577,9 +598,9 @@
                         <div class="content text-center">
                             <h3 style="font-size: 18px; text-transform: uppercase;"><a style="color: #17334b;" href="/particuliers/expert-comptable">Credit</a></h3>
                             <ul>
-                                <li style="color: #17334b;">Particuliers</li>
+                                <li style="color: #17334b;">PME</li>
                             </ul>
-                            <a href="c/particuliers/expert-comptable" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
+                            <a href="/particuliers/expert-comptable" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
                         </div>
                     </div>
                 </div>

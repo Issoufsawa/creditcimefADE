@@ -1,7 +1,5 @@
 
 
-
-
 <!doctype html>
 <html lang="fr">
 <head>
@@ -180,7 +178,24 @@
       .default-btn{
         background-color: #FF9339 !important;
       }
+     
     }
+
+
+
+
+    /* Personnalisation du bouton radio */
+.custom-radio {
+    accent-color: #f3f4f5; /* Couleur au cocher (supporté par les navigateurs modernes) */
+}
+
+/* Option pour personnalisation avancée (anciens navigateurs) */
+.custom-radio:checked {
+    background-color: #FF9339;
+    border-color: #FF9339;
+}
+
+
 
 </style>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
@@ -196,7 +211,7 @@
         </div>
     </div>
   </div>-->
-  <header class="top-header top-header-bg" style="background-color: #FF9339;">
+<header class="top-header top-header-bg" style="background-color: #FF9339;">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7 col-md-6">
@@ -398,7 +413,7 @@
                                 <i class='bx bx-search'></i>
                             </div>
                             <div class="get-btn">
-                                <a href="/devenirclient.html" class="default-btn btn-bg-two border-radius-50">Devenir Client <i class='bx bx-chevron-right'></i></a>
+                                <a href="/devenirclient.html"  class="default-btn btn-bg-two border-radius-50">Devenir Client <i class='bx bx-chevron-right'></i></a>
                             </div>	
                         </div>
                     </div>
@@ -408,12 +423,14 @@
     </div>
 </div>
 <!-- End Navbar Area -->
+
+
 <div class="call-us-area back_contact">
-    <div class="container">
+    <div class="container ">
         <div class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6 ">
                 <div class="call-us-img">
-                    <img src="/assets/images/contact_2.png" style="height: auto;" alt="Images">
+                    <img src="/assets/images/contact_2.png" style="height:auto;" alt="Images">
 
                 </div>
             </div>
@@ -424,21 +441,12 @@
                     </div>
                 </div>
                 <div class="inner-title" style="margin-top: -150px !important;">
-                    <h1>Particulier</h1>
+                    <h1>Actualités</h1>
                     <ul>
-                        <li style="display: inline-block; margin-right: 5px;">
-                            <a class="text-dark" href="">Accueil </a> 
-                        </li>
                         <li style="display: inline-block;">
-                            <i class='bx bx-chevrons-right'></i>
+                            <a class="text-dark" href="index.html">Accueil <i class='bx bx-chevron-right border' style=""></i></a> 
                         </li>
-                        <li style="display: inline-block; margin-right: 5px;">
-                            <a class="text-dark" href="">Particulier</a> 
-                        </li>
-                        <li style="display: inline-block;">
-                            <i class='bx bx-chevrons-right'></i>
-                        </li>
-                        <li class="coul" style="display: inline-block; margin-left: 5px;"> Comptes</li>
+                        <li class="coul" style="display: inline-block;">𝐂𝐎𝐌𝐏𝐓𝐄 𝐂𝐎𝐔𝐑𝐀𝐍𝐓 𝐒𝐈𝐌𝐏𝐋𝐄 𝐒𝐎𝐂𝐈𝐀𝐋</li>
                     </ul>
                 </div>
             </div>
@@ -446,178 +454,177 @@
     </div>
 </div>
 
-<!-- Case Study Area -->
+
+<!-- Service Details Area -->
 <div class="bg-light">
-    <div class="case-study-area" style="padding-top: 40px; padding-bottom: 70px;">
+    <div class="service-details-area" style="padding-top: 40px; padding-bottom: 70px;">
         <div class="container">
-            <div class="text-center">
-                <p class="text" style="font-size: 30px;">
-                    Nos offres de produits pour les <b>Particuliers</b>
-                </p>
-            </div>
-
-            <div class="row pt-45">
-                <!-- <div class="col-lg-4 col-md-6">
-                    <div class="case-study-item">
-                        <a href="case-details.html">
-                            <img src="/assets/images/credit.jpg" style="height: 250px;" alt="Images">
-                        </a>
-                        <div class="content text-center">
-                            <h3 style="font-size: 18px; text-transform: uppercase;"><a href="case-details.html">Compte courant<br></a></h3>
-                            <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="case-study-item">
-                        <a href="case-details.html">
-                            <img src="/assets/images/credit_1.jpg" style="height: 250px;" alt="Images">
-                        </a>
-                        <div class="content text-center">
-                            <h3 style="font-size: 18px; text-transform: uppercase;"><a href="case-details.html">Compte épargne</a></h3>
-                            <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="case-study-item">
-                        <a href="case-details.html">
-                            <img src="/assets/images/credit_3.jpg" style="height: 250px;" alt="Images">
-                        </a>
-                        <div class="content text-center">
-                            <h3 style="font-size: 18px; text-transform: uppercase;"><a href="case-details.html">Compte épargne projet</a></h3>
-                            <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-                </div> -->
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-item">
-                        <div class="blog-img">
-                            <a href="#">
-                                <img src="/assets/images/services/credit.jpg" style="height: 250px;" alt="Blog Images">
-                            </a>
-                            <a href="#" class="blog-tag">
-                                Particulier
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h3>
-                                <a href="#" class="coul">Compte courant</a>
-                            </h3>
-
-                            <ul>
-                                <li>Dépôt initial minimum : <b>25 000 FCFA</b></li>
-                                <li>Frais d’ouverture : <b>10 000 FCFA</b></li>
-                                <li>Frais de gestion : <b>2 500 FCFA</b></li>
-                            </ul>       
-
-                            <a href="/comptepartcourant.html" class="read-btn coul">Découvrir <i class='bx bx-chevron-right'></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-item">
-                        <div class="blog-img">
-                            <a href="#">
-                                <img src="/assets/images/services/credit_1.jpg" style="height: 250px;" alt="Blog Images">
-                            </a>
-                            <a href="#" class="blog-tag">
-                                Particulier
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h3>
-                                <a href="#" class="coul">Compte épargne Libre (CELB)</a>
-                            </h3>
-                            <ul>
-                                <li>Dépôt initial minimum : <b>25 000 FCFA</b></li>
-                                <li>Frais d’ouverture : <b>0 FCFA</b></li>
-                                <li>Taux de rémunération : <b>3.80%</b></li>
-                            </ul>       
-                            <a href="/comptepartepa.html" class="read-btn coul">Découvrir <i class='bx bx-chevron-right'></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-item">
-                        <div class="blog-img">
-                            <a href="#">
-                                <img src="/assets/images/services/credit_3.jpg" style="height: 250px;" alt="Blog Images">
-                            </a>
-                            <a href="#" class="blog-tag">
-                                Particulier
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h3>
-                                <a href="#" class="coul">Compte Épargne Fonds d’urgence (CEFU)</a>
-                            </h3>
-                            <ul>
-                                <li>Dépôt initial minimum : <b>25 000 FCFA</b></li>
-                                <li>Cotisation minimum  : <b>5 000 FCFA</b></li>
-                                <li>Taux de rémunération : <b>3,90 %</b></li>
-                            </ul>       
-                            <a href="/compteepalidia.html" class="read-btn coul">Découvrir <i class='bx bx-chevron-right'></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div style="background: linear-gradient(to right, rgb(251, 241, 227), #FF9339); padding: 40px;">
-    <div class="row">
-        <div class="col-md-6 col-sm-12 p-5">
-            <h1 style="font-size: 50px; color: #070b3b;">Vous êtes intéressé(e)<br> par d'autres produits <br>ou services ?</h1>
-        </div>
-        <div class="col-md-6 col-sm-12">
-
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="case-study-item">
-                        <a href="/particuliers/credit">
-                            <img src="/assets/images/services/credit.jpg" style="height: 250px;" alt="Images">
-                        </a>
-                        <div class="content text-center">
-                            <h3 style="font-size: 18px; text-transform: uppercase;"><a style="color: #17334b;" href="/particuliers/credit">Credit<br></a></h3>
-                            <ul>
-                                <li style="color: #17334b;">Particuliers</li>
-                            </ul>
-                            <a href="/particuliers/credit" class="more-btn "><i class='bx bx-right-arrow-alt'></i></a>
+                <div class="col-lg-8">
+                    <div class="service-article">
+                        <h1>𝐂𝐎𝐌𝐏𝐓𝐄 𝐂𝐎𝐔𝐑𝐀𝐍𝐓 𝐒𝐈𝐌𝐏𝐋𝐄 𝐒𝐎𝐂𝐈𝐀𝐋</h1>
+                        <div class="service-article-img detail_actu rounded">
+                            <img src="/assets/images/actualites/actu_1.jpg" alt="Images">
                         </div>
+                        <div class="service-article-content p-3 rounded" style="background-color: #fff;">
+                            <!-- <h2>Cloud Computing</h2> -->
+                            <p>
+                                Découvrez notre Offre Exclusive : Le Compte Courant Simple Social !
+                                💰 Frais d'ouverture : 5000f 💰
+                                Un compte courant exceptionnel accessible à tous !
+                                ✅ Simplifiez le dépôt de vos revenus en toute facilité
+                                ✅ Effectuez vos transactions, virements et retraits aisément
+                                Rejoignez-nous dès maintenant pour une expérience bancaire pratique et accessible. Ne manquez pas cette offre spéciale !
+                                📱 Infoline : (+225) 07 03 71 04 57
+                                🌐 Site : https://credit-fef.com/ 
+                                #OffreSpéciale #CompteCourant #AccessibilitéBancaire #Microfinance #CréditFEF
+                            </p>
+
+                           <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <ul class="service-article-list service-article-rs">
+                                        <li><i class='bx bxs-check-circle'></i>Cost of Supplies and Equipment</li>
+                                        <li><i class='bx bxs-check-circle'></i>Bribed Autor Nisi Elit Volume</li>
+                                        <li><i class='bx bxs-check-circle'></i>Cost of Supplies and Equipment</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <ul class="service-article-list">
+                                        <li><i class='bx bxs-check-circle'></i>Change the Volume of Expected</li>
+                                        <li><i class='bx bxs-check-circle'></i>Easy to Customer Services</li>
+                                        <li><i class='bx bxs-check-circle'></i>Good Quality Products Services</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu 
+                                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne, 
+                                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet n, 
+                                vu eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis 
+                                pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aen  
+                                li, porttitor eu, consequat vitae, eleifend ac, enim.
+                            </p> 
+                        </div>
+
+                        <!-- <div class="service-article-another">
+                            <h2>What Benefit You Will Get</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu 
+                                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne, 
+                                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet n, 
+                                vu eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis 
+                                pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aen  
+                                li, porttitor eu, consequat vitae, eleifend ac, enim.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="service-article-another-img">
+                                        <img src="/assets/images/services/service-details-img1.jpg" alt="Images">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="service-article-another-img">
+                                        <img src="/assets/images/services/service-details-img2.jpg" alt="Images">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed
+                                odio sit amet.Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                Duis sed odio sit amet.Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
+                                id elit. Duis sed odio sit amet. li, porttitor eu, consequat vitae, eleifend ac, enim.
+                            </p>
+                        </div>
+
+                        <div class="service-work-process">
+                            <h2>Our Working Proccess</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu 
+                                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne, 
+                                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet n, 
+                                vu eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis 
+                                pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aen  
+                                li, porttitor eu, consequat vitae, eleifend ac, enim.
+                            </p>
+                        </div> -->
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-6">
-                    <div class="case-study-item">
-                        <a href="/particuliers/expert-comptable">
-                            <img src="/assets/images/services/credit_1.jpg" style="height: 250px;" alt="Images">
-                        </a>
-                        <div class="content text-center">
-                            <h3 style="font-size: 18px; text-transform: uppercase;"><a style="color: #17334b;" href="/particuliers/expert-comptable">Expertise comptable</a></h3>
-                            <ul>
-                                <li style="color: #17334b;">Particuliers</li>
-                            </ul>
-                            <a href="c/particuliers/expert-comptable" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
+                <div class="col-lg-4">
+                    <div class="side-bar-area">
+                        <div class="side-bar-widget p-2" style="border-radius: 10px;">
+
+                            <h3 class="title">Dernière actualité</h3>
+                            <div class="widget-popular-post">
+                                <article class="item">
+                                    <a href="news-details.html" class="thumb">
+                                        <span class="full-image cover bg1" role="img"><img src="/assets/images/actualites/actu_1.jpg" alt="Images"></span>
+                                        
+                                    </a>
+                                    <div class="info">
+                                        <h4 class="title-text">
+                                            <a href="news-details.html">
+                                                10 Ways to Get Efficient Result & Benefits
+                                            </a>
+                                        </h4>
+                                        <p>Nov 05, 2024</p>
+                                    </div>
+                                </article>
+
+                                <article class="item">
+                                    <a href="news-details.html" class="thumb">
+                                        <span class="full-image cover bg2" role="img"><img src="/assets/images/actualites/actu_1.jpg" alt="Images"></span>
+                                    </a>
+                                    <div class="info">
+                                        <h4 class="title-text">
+                                            <a href="news-details.html">
+                                                New Device Invention for Digital Platform
+                                            </a>
+                                        </h4>
+                                        <p>13 October, 2024</p>
+                                    </div>
+                                </article>
+
+                                <article class="item">
+                                    <a href="news-details.html" class="thumb">
+                                        <span class="full-image cover bg3" role="img"><img src="/assets/images/actualites/actu_1.jpg" alt="Images"></span>
+                                    </a>
+                                    <div class="info">
+                                        <h4 class="title-text">
+                                            <a href="news-details.html">
+                                                Idea For New 5 App Design
+                                            </a> 
+                                        </h4>
+                                        <p>17 October, 2024</p>
+                                    </div>
+                                </article>
+
+                                <article class="item">
+                                    <a href="news-details.html" class="thumb">
+                                        <span class="full-image cover bg4" role="img"><img src="/assets/images/actualites/actu_1.jpg" alt="Images"></span>
+                                    </a>
+                                    <div class="info">
+                                        <h4 class="title-text">
+                                            <a href="news-details.html">
+                                                Product Idea Solution For New Generation
+                                            </a> 
+                                        </h4>
+                                        <p>17 October, 2024</p>
+                                    </div>
+                                </article>
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
-
-
-
+<!-- Service Details Area End -->
 <div class="call-us-area">
     <div class="container">
         <div class="row align-items-center">
@@ -695,6 +702,7 @@
         </div>
     </div>
 </div>
+
 
 <footer class="footer-area footer-bg">
     <div class="container">
